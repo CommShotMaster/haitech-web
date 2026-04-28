@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="HaiTech — 学习、玩耍，在机器人世界中创新！专为小学生打造的沉浸式 STEAM 教育，使用 DJI RoboMaster 和大疆 DJI Neo 无人机。" />
+  <meta property="og:title" content="HaiTech | 少儿机器人教育" />
+  <meta property="og:description" content="学习、玩耍，在机器人世界中创新！专为小学生打造的沉浸式 STEAM 教育。" />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <title>HaiTech | 少儿机器人教育</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo"><img src="assets/logo.png" alt="HaiTech"
+          style="height: 40px; filter: invert(1); mix-blend-mode: multiply;" /></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#programs">课程项目</a></li>
+        <li><a href="#products">机器人</a></li>
+        <li><a href="#learning">教学大纲</a></li>
+
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg-glow hero-bg-glow-1"></div>
+    <div class="hero-bg-glow hero-bg-glow-2"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content reveal">
+          <h1 class="hero-title">
+            学习、玩耍，<br />
+            在机器人世界中<span class="gradient-text">创新</span>
+          </h1>
+          <p class="hero-subtitle">
+            专为小学生打造的沉浸式 STEAM 教育。使用 DJI RoboMaster 和 DJI Neo 无人机等最先进的设备，让编程变得生动有趣。
+          </p>
+          <div class="hero-actions">
+            <a href="#programs" class="btn btn-primary">探索课程</a>
+            <a href="#contact" class="btn btn-outline">联系我们</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-value">500+</div>
+              <div class="hero-stat-label">快乐学员</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">12</div>
+              <div class="hero-stat-label">合作学校</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">100%</div>
+              <div class="hero-stat-label">乐趣保证</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-1" aria-hidden="true">
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          <div class="hero-image-frame">
+            <!-- 静态图片背景 (当您准备好视频后，可以将下方 video 标签的注释取消，并删除此 img) -->
+            <img src="assets/kids_learning.png" alt="孩子们学习机器人" id="hero-img-placeholder" />
+            <!-- 视频背景占位符 (将 src 替换为您的 mp4 视频路径) -->
+            <!-- <video id="hero-video" src="assets/your-video.mp4" autoplay loop muted playsinline style="width: 100%; height: 600px; object-fit: cover; border-radius: 32px;"></video> -->
+            <div class="hero-badge-float top-right">
+              <div class="badge-icon">🎮</div>
+              <div>
+                <div class="badge-text-title">动手实践</div>
+                <div class="badge-text-sub">互动且有趣！</div>
+              </div>
+            </div>
+            <div class="hero-badge-float bottom-left">
+              <div class="badge-icon">💻</div>
+              <div>
+                <div class="badge-text-title">学习编程</div>
+                <div class="badge-text-sub">Scratch & Python</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="marquee-dot">✦</span> Scratch 图形化编程</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> Python 编程</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> DJI RoboMaster 机器人</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> DJI Neo 飞行体验</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> 解决问题能力</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> 团队合作与领导力</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> STEAM 教育</span>
+      <!-- Duplicate for infinite scroll -->
+      <span class="marquee-item"><span class="marquee-dot">✦</span> Scratch 图形化编程</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> Python 编程</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> DJI RoboMaster 机器人</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> DJI Neo 飞行体验</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> 解决问题能力</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> 团队合作与领导力</span>
+      <span class="marquee-item"><span class="marquee-dot">✦</span> STEAM 教育</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-card-visual">
+            <img src="assets/drone.png" alt="教室中的 DJI Neo 无人机" />
+            <div class="about-floating-stat">
+              <div class="about-floating-icon">🚀</div>
+              <div>
+                <div class="about-floating-stat-value">赋能</div>
+                <div class="about-floating-stat-label">下一代</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-1">
+          <div class="section-label">我们是谁</div>
+          <h2 class="section-title">通过科技<span class="gradient-text">启发年轻大脑</span></h2>
+          <p class="about-description">
+            在 HaiTech，我们认为学习应该是一场激动人心的冒险。我们为小学生提供引人入胜的动手实践机器人和编程体验。使用 DJI RoboMaster S1
+            和大疆 DJI Neo 无人机等尖端工具，我们将复杂的概念转化为有趣且易于上手的挑战。
+          </p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">💡</div>
+              <div class="pillar-title">批判性思维</div>
+              <div class="pillar-text">学生通过逻辑和创造力解决现实世界的问题。</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🤝</div>
+              <div class="pillar-title">团队协作</div>
+              <div class="pillar-text">在团队中共同组装、编程和参与竞赛。</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🛠️</div>
+              <div class="pillar-title">动手能力</div>
+              <div class="pillar-text">在实践中学习，从组装机器人到操作大疆 DJI Neo 无人机。</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🌟</div>
+              <div class="pillar-title">面向未来</div>
+              <div class="pillar-text">为孩子们提供数字未来必不可少的 STEAM 技能。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section id="programs" class="section">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:600px; margin: 0 auto;">
+        <div class="section-label">我们的课程</div>
+        <h2 class="section-title">引人入胜的<span class="gradient-text">机器人课程</span></h2>
+        <p style="color:var(--clr-muted); font-size:1.1rem; font-weight:500; margin-bottom: 40px;">专为小学生量身定制的沉浸式教育体验。
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🏕️</div>
+          <h3 class="service-title">一日学校营</h3>
+          <p class="service-text">
+            充满机器人乐趣的充实一天！学生将接触到激动人心的编程和工程世界。他们将学习编程基础、组装自己的机器人，并在一天结束时进行一场令人兴奋的机器人比赛。非常适合学校的课外活动或假日安排！</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🏫</div>
+          <h3 class="service-title">拓展课程</h3>
+          <p class="service-text">我们的持续拓展课程带您深入了解 STEAM。我们与部分小学合作开设这些进阶课程，带领学生从可视化图形编程一路进阶到 Python
+            入门。学生将在学期中建立起逻辑和技术的坚实基础。</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="products-intro reveal">
+        <div class="section-label">我们的工具</div>
+        <h2 class="section-title">使用<span class="gradient-text">最好的科技</span>学习</h2>
+        <p>我们使用优质的教育机器人，让学习变得直观、安全且极其有趣。</p>
+      </div>
+      <div class="products-grid">
+        <!-- Featured Robomaster -->
+        <div class="product-card featured reveal">
+          <div class="product-img-wrap">
+            <img src="assets/rover.png" alt="DJI RoboMaster S1 风格机器人" />
+            <div class="product-tag">旗舰设备</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">大疆 RoboMaster S1</h3>
+            <p class="product-desc">这款颠覆性的教育机器人旨在激发每个学习者的潜能。S1 的灵感源自 DJI 举办的 RoboMaster
+              机甲大师赛，通过引人入胜的竞技模式和智能功能，让用户深入理解科学、数学、物理和编程知识。</p>
+            <div class="product-specs">
+              <div class="spec-item"><span class="spec-value">Scratch & Python</span><span
+                  class="spec-label">支持的编程语言</span></div>
+              <div class="spec-item"><span class="spec-value">全向移动</span><span class="spec-label">麦克纳姆轮</span></div>
+              <div class="spec-item"><span class="spec-value">AI 识别</span><span class="spec-label">智能视觉系统</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Drones -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-img-wrap">
+            <img src="assets/drone.png" alt="大疆 DJI Neo 无人机" />
+            <div class="product-tag">空中飞行</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">大疆 DJI Neo 无人机</h3>
+            <p class="product-desc">将学习带向天空！学生使用图形化编程来设计飞行路线，表演空中特技，并在绝对安全的室内环境中了解飞行中的物理学奥秘。</p>
+            <div class="product-specs">
+              <div class="spec-item"><span class="spec-value">图形化编程</span><span class="spec-label">简单易学</span></div>
+              <div class="spec-item"><span class="spec-value">安全飞行</span><span class="spec-label">全方位螺旋桨保护罩</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pico 3 VR -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-img-wrap"
+            style="background:#e0f2fe; display:flex; align-items:center; justify-content:center;">
+            <div style="font-size: 6rem; text-shadow: 0 10px 20px rgba(0,0,0,0.1);">🥽</div>
+            <div class="product-tag">虚拟现实</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Pico 3 VR 头显</h3>
+            <p class="product-desc">带来沉浸式的虚拟现实体验！学生可以在安全的数字环境中进行探索、学习和互动，极大地激发他们对科技的兴趣和想象力。</p>
+            <div class="product-specs">
+              <div class="spec-item"><span class="spec-value">沉浸式</span><span class="spec-label">3D 视觉体验</span></div>
+              <div class="spec-item"><span class="spec-value">交互式</span><span class="spec-label">手柄控制</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- AR Gun -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-img-wrap"
+            style="background:#ffedd5; display:flex; align-items:center; justify-content:center;">
+            <div style="font-size: 6rem; text-shadow: 0 10px 20px rgba(0,0,0,0.1);">🔫</div>
+            <div class="product-tag">增强现实</div>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">AR 增强现实设备</h3>
+            <p class="product-desc">通过增强现实技术，将虚拟元素无缝叠加到现实世界中。体验虚拟与现实交融的科技乐趣，在运动中锻炼团队合作与反应能力。</p>
+            <div class="product-specs">
+              <div class="spec-item"><span class="spec-value">虚实结合</span><span class="spec-label">AR 追踪技术</span></div>
+              <div class="spec-item"><span class="spec-value">体感交互</span><span class="spec-label">沉浸对战体验</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CURRICULUM ===== -->
+  <section id="learning" class="section">
+    <div class="container">
+      <div class="tech-grid">
+        <div class="reveal">
+          <div class="section-label">教学大纲</div>
+          <h2 class="section-title">您的孩子将<span class="gradient-text">学到什么</span></h2>
+          <div class="tech-list">
+            <div class="tech-item">
+              <div class="tech-icon-wrap">🧩</div>
+              <div>
+                <h3 class="tech-item-title">可视化图形编程</h3>
+                <p class="tech-item-desc">使用基于 Scratch 的可视化编程界面，初学者可以轻松拼接代码块来指挥他们的机器人，掌握编程逻辑，而无需担心遇到复杂的语法错误。</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon-wrap">🐍</div>
+              <div>
+                <h3 class="tech-item-title">Python 入门</h3>
+                <p class="tech-item-desc">随着学生的进步，他们将过渡到编写实际的文本 Python 代码，让他们在世界上最受欢迎的编程语言中获得领先优势。</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon-wrap">⚙️</div>
+              <div>
+                <h3 class="tech-item-title">应用物理与数学</h3>
+                <p class="tech-item-desc">学生们将实时运用速度、距离、角度和几何等概念来引导机器人穿越迷宫、计算飞行轨迹并完成各种物理挑战。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-visual reveal reveal-delay-1">
+          <img src="assets/kids_learning.png" alt="孩子们在课堂上编程" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:600px; margin: 0 auto 48px;">
+        <div class="section-label">常见问题</div>
+        <h2 class="section-title">家长最关心的<span class="gradient-text">几个问题</span></h2>
+      </div>
+      <div class="faq-grid reveal reveal-delay-1">
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title">几岁的孩子适合参加？</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">我们的课程专为 7 到 12 岁（小学阶段）的学生设计，内容既有基础的图形化编程，也有进阶的 Python 编程。</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title">需要自己带电脑吗？</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">不需要！我们为每一位学生提供所需的全部设备，包括笔记本电脑、机器人和各类教具。</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title">没有任何编程基础可以参加吗？</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">当然可以！我们的课程从零基础开始，通过直观的 Scratch 模块化编程，让孩子们轻松上手，逐步建立逻辑思维。</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title">夏令营包午餐吗？</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">一日营包含健康的午餐和下午茶点心，您在报名时可以告知我们孩子是否有任何食物过敏史。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="assets/logo.png" alt="HaiTech"
+              style="height: 48px; filter: invert(1); mix-blend-mode: multiply;" /></div>
+          <p>通过有趣、亲自动手的机器人教育，启发下一代工程师、程序员和创新者。</p>
+          <div class="footer-socials">
+            <a href="https://www.xiaohongshu.com/user/profile/66adfc32000000001d022950?xsec_token=ABbNPQPwTJiCXzoeZypNipPQMk_DrjIc88kMGcNf70-Ek%3D&xsec_source=pc_search"
+              target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Xiaohongshu"
+              style="font-weight: 700; font-size: 0.85rem;">小红书</a>
+            <a href="https://www.instagram.com/haitech.education/?hl=en" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>课程项目</h4>
+          <ul>
+            <li><a href="#programs">一日学校营</a></li>
+            <li><a href="#programs">拓展课程</a></li>
+            <li><a href="#learning">教学大纲</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>机器人</h4>
+          <ul>
+            <li><a href="#products">大疆 RoboMaster S1</a></li>
+            <li><a href="#products">大疆 DJI Neo 无人机</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>公司信息</h4>
+          <ul>
+            <li><a href="#about">关于我们</a></li>
+
+            <li><a href="#">加入团队</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span>HaiTech 少儿机器人教育</span>. 保留所有权利。</p>
+        <p><a href="#" style="color:var(--clr-muted);">隐私政策</a> · <a href="#" style="color:var(--clr-muted);">服务条款</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+    reveals.forEach(reveal => revealObserver.observe(reveal));
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const header = item.querySelector('.faq-header');
+      header.addEventListener('click', () => {
+        const currentlyActive = document.querySelector('.faq-item.active');
+        if (currentlyActive && currentlyActive !== item) {
+          currentlyActive.classList.remove('active');
+          currentlyActive.querySelector('.faq-body').style.maxHeight = null;
+        }
+        item.classList.toggle('active');
+        const body = item.querySelector('.faq-body');
+        if (item.classList.contains('active')) {
+          body.style.maxHeight = body.scrollHeight + "px";
+        } else {
+          body.style.maxHeight = null;
+        }
+      });
+    });
+
+    // Contact Form AJAX Submission
+    const contactForm = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const btn = contactForm.querySelector('button');
+        const originalText = btn.textContent;
+        btn.textContent = '正在提交...';
+        btn.disabled = true;
+
+        // Create a new FormData object
+        const data = new FormData(contactForm);
+
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          if (response.ok) {
+            contactForm.reset();
+            formMessage.style.display = 'block';
+            setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                alert(data["errors"].map(error => error["message"]).join(", "));
+              } else {
+                alert("提交失败，请稍后再试。");
+              }
+            })
+          }
+        }).catch(error => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          alert("提交时发生网络错误。");
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
